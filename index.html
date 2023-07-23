@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="font-icon/all.min.css" />
+    <link rel="stylesheet" href="font-icon/fontawesome.min.css" />
+    <link rel="icon" href="img/currency.png" type="image/x-icon" />
+    <title>Currency Converter App</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Currency Converter</h1>
+      <!--  -->
+      <div>
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" value="1" />
+      </div>
+      <!--  -->
+      <div>
+        <label for="base-currency">From</label>
+
+        <div class="field base">
+          <img src="img/US.png" />
+          <select id="base-currency">
+            <option selected flag="US">USD</option>
+          </select>
+        </div>
+      </div>
+      <!--  -->
+      <div class="arrows">
+        <i class="fa-solid fa-up-long"></i>
+        <i class="fa-solid fa-down-long"></i>
+      </div>
+      <!--  -->
+      <div>
+        <label for="target-currency">To</label>
+        <div class="field target">
+          <img src="img/MA.png" />
+          <select id="target-currency">
+            <option selected flag="MA">MAD</option>
+          </select>
+        </div>
+      </div>
+      <!--  -->
+      <p></p>
+      <!--  -->
+      <button>Get Exchange Rate</button>
+    </div>
+    <script src="main.js" type="module"></script>
+    <script src="countries.js" type="module"></script>
+  </body>
+</html>
